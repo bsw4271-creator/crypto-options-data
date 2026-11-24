@@ -83,3 +83,10 @@ test('currency summary: overall ratios, this-week expiry skips same-day, largest
   assert.equal(s.expiries.length, 3);
   assert.equal(s.totalOi, 750);
 });
+
+test('this week means the Friday weekly expiry, not the next daily one; under a day rolls to next Friday', () => {
+  const rows = ['25NOV26', '26NOV26', '27NOV26', '4DEC26'].flatMap((d) => [row(`BTC-${d}-90000-C`, 10, 50), row(`BTC-${d}-90000-P`, 10, 50)]);
+  assert.equal(summarizeCurrency({ chain: readChain(rows, NOW), spot: 90000, dvol: null, now: NOW }).week.expiry, '2026-11-27');
+  const fridayMorning = Date.parse('2026-11-27T02:00:00Z'); // 6 hours before the Friday expiry
+  assert.equal(summarizeCurrency({ chain: readChain(rows, fridayMorning), spot: 90000, dvol: null, now: fridayMorning }).week.expiry, '2026-12-04');
+});
