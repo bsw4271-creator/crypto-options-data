@@ -2,17 +2,17 @@
  "schema": "crypto-options-data/os-bundle@1",
  "source": "Deribit public API",
  "run": {
-  "runAt": "2026-11-24T11:48:03.722Z",
+  "runAt": "2026-11-24T11:54:53.926Z",
   "failed": []
  },
  "assets": {
   "BTC": {
-   "spot": 60108.8,
+   "spot": 60344.62,
    "putCallOi": 0.805,
    "putCallVolume24h": 0.766,
-   "totalOi": 431979.5,
+   "totalOi": 431979.9,
    "iv": {
-    "current": 54.9,
+    "current": 54.6,
     "asOf": "2026-11-24",
     "min": 33.6,
     "max": 82.6,
@@ -23,39 +23,39 @@
    "week": {
     "expiry": "2026-11-27",
     "days": 2.84,
-    "oiCalls": 58576.5,
+    "oiCalls": 58576.6,
     "oiPuts": 53272.2,
     "putCallOi": 0.909,
     "maxPain": 72000,
-    "atmIv": 60.4,
-    "expectedMovePct": 5.33,
-    "rangeLow": 56904,
-    "rangeHigh": 63313
+    "atmIv": 59.4,
+    "expectedMovePct": 5.24,
+    "rangeLow": 57185,
+    "rangeHigh": 63505
    },
    "largest": {
     "expiry": "2026-12-25",
     "days": 30.84,
-    "oiCalls": 96929.4,
+    "oiCalls": 96928.5,
     "oiPuts": 65747.7,
     "putCallOi": 0.678,
     "maxPain": 72000,
     "atmIv": 50.4,
-    "expectedMovePct": 14.64,
-    "rangeLow": 51308,
-    "rangeHigh": 68910
+    "expectedMovePct": 14.65,
+    "rangeLow": 51506,
+    "rangeHigh": 69183
    },
    "expiries": [
     {
      "expiry": "2026-11-25",
      "days": 0.84,
-     "oiCalls": 1748.6,
-     "oiPuts": 2063.8,
+     "oiCalls": 1748.7,
+     "oiPuts": 2063.9,
      "putCallOi": 1.18,
      "maxPain": 61000,
-     "atmIv": 63.6,
-     "expectedMovePct": 3.06,
-     "rangeLow": 58272,
-     "rangeHigh": 61945
+     "atmIv": 61.9,
+     "expectedMovePct": 2.97,
+     "rangeLow": 58555,
+     "rangeHigh": 62134
     },
     {
      "expiry": "2026-11-26",
@@ -64,22 +64,22 @@
      "oiPuts": 881.4,
      "putCallOi": 2.376,
      "maxPain": 62000,
-     "atmIv": 62.6,
-     "expectedMovePct": 4.45,
-     "rangeLow": 57437,
-     "rangeHigh": 62781
+     "atmIv": 61.3,
+     "expectedMovePct": 4.35,
+     "rangeLow": 57719,
+     "rangeHigh": 62971
     },
     {
      "expiry": "2026-11-27",
      "days": 2.84,
-     "oiCalls": 58576.5,
+     "oiCalls": 58576.6,
      "oiPuts": 53272.2,
      "putCallOi": 0.909,
      "maxPain": 72000,
-     "atmIv": 60.4,
-     "expectedMovePct": 5.33,
-     "rangeLow": 56904,
-     "rangeHigh": 63313
+     "atmIv": 59.4,
+     "expectedMovePct": 5.24,
+     "rangeLow": 57185,
+     "rangeHigh": 63505
     },
     {
      "expiry": "2026-11-28",
@@ -88,10 +88,10 @@
      "oiPuts": 0,
      "putCallOi": null,
      "maxPain": 53000,
-     "atmIv": 58.6,
-     "expectedMovePct": 6.01,
-     "rangeLow": 56498,
-     "rangeHigh": 63720
+     "atmIv": 57.6,
+     "expectedMovePct": 5.91,
+     "rangeLow": 56780,
+     "rangeHigh": 63909
     },
     {
      "expiry": "2026-12-04",
@@ -100,10 +100,10 @@
      "oiPuts": 14763.8,
      "putCallOi": 1.533,
      "maxPain": 64000,
-     "atmIv": 54.3,
-     "expectedMovePct": 8.91,
-     "rangeLow": 54752,
-     "rangeHigh": 65465
+     "atmIv": 54.5,
+     "expectedMovePct": 8.94,
+     "rangeLow": 54951,
+     "rangeHigh": 65739
     },
     {
      "expiry": "2026-12-11",
@@ -114,17 +114,17 @@
      "maxPain": 63000,
      "atmIv": 53.6,
      "expectedMovePct": 11.52,
-     "rangeLow": 53186,
-     "rangeHigh": 67032
+     "rangeLow": 53393,
+     "rangeHigh": 67297
     }
    ],
-   "updatedAt": "2026-11-24T11:48:03.722Z"
+   "updatedAt": "2026-11-24T11:54:53.926Z"
   },
   "ETH": {
-   "spot": 1693.95,
+   "spot": 1701.43,
    "putCallOi": 0.537,
-   "putCallVolume24h": 0.562,
-   "totalOi": 1795783,
+   "putCallVolume24h": 0.558,
+   "totalOi": 1795827,
    "iv": {
     "current": 66.9,
     "asOf": "2026-11-24",
@@ -138,13 +138,13 @@
     "expiry": "2026-11-27",
     "days": 2.84,
     "oiCalls": 230030,
-    "oiPuts": 125368,
+    "oiPuts": 125411,
     "putCallOi": 0.545,
     "maxPain": 2100,
-    "atmIv": 65.7,
-    "expectedMovePct": 5.79,
-    "rangeLow": 1596,
-    "rangeHigh": 1792
+    "atmIv": 65.9,
+    "expectedMovePct": 5.81,
+    "rangeLow": 1603,
+    "rangeHigh": 1800
    },
    "largest": {
     "expiry": "2026-12-25",
@@ -153,10 +153,10 @@
     "oiPuts": 203732,
     "putCallOi": 0.407,
     "maxPain": 2200,
-    "atmIv": 62.9,
-    "expectedMovePct": 18.28,
-    "rangeLow": 1384,
-    "rangeHigh": 2004
+    "atmIv": 63,
+    "expectedMovePct": 18.3,
+    "rangeLow": 1390,
+    "rangeHigh": 2013
    },
    "expiries": [
     {
@@ -166,10 +166,10 @@
      "oiPuts": 15198,
      "putCallOi": 1.557,
      "maxPain": 1740,
-     "atmIv": 69.7,
-     "expectedMovePct": 3.35,
-     "rangeLow": 1637,
-     "rangeHigh": 1751
+     "atmIv": 71,
+     "expectedMovePct": 3.4,
+     "rangeLow": 1644,
+     "rangeHigh": 1759
     },
     {
      "expiry": "2026-11-26",
@@ -178,22 +178,22 @@
      "oiPuts": 3465,
      "putCallOi": 0.626,
      "maxPain": 1760,
-     "atmIv": 68.7,
-     "expectedMovePct": 4.88,
-     "rangeLow": 1611,
-     "rangeHigh": 1777
+     "atmIv": 69.2,
+     "expectedMovePct": 4.91,
+     "rangeLow": 1618,
+     "rangeHigh": 1785
     },
     {
      "expiry": "2026-11-27",
      "days": 2.84,
      "oiCalls": 230030,
-     "oiPuts": 125368,
+     "oiPuts": 125411,
      "putCallOi": 0.545,
      "maxPain": 2100,
-     "atmIv": 65.7,
-     "expectedMovePct": 5.79,
-     "rangeLow": 1596,
-     "rangeHigh": 1792
+     "atmIv": 65.9,
+     "expectedMovePct": 5.81,
+     "rangeLow": 1603,
+     "rangeHigh": 1800
     },
     {
      "expiry": "2026-11-28",
@@ -202,10 +202,10 @@
      "oiPuts": 0,
      "putCallOi": null,
      "maxPain": 1500,
-     "atmIv": 65,
-     "expectedMovePct": 6.67,
-     "rangeLow": 1581,
-     "rangeHigh": 1807
+     "atmIv": 65.2,
+     "expectedMovePct": 6.68,
+     "rangeLow": 1588,
+     "rangeHigh": 1815
     },
     {
      "expiry": "2026-12-04",
@@ -214,10 +214,10 @@
      "oiPuts": 75205,
      "putCallOi": 1.161,
      "maxPain": 1800,
-     "atmIv": 64.2,
-     "expectedMovePct": 10.54,
-     "rangeLow": 1515,
-     "rangeHigh": 1873
+     "atmIv": 64.6,
+     "expectedMovePct": 10.6,
+     "rangeLow": 1521,
+     "rangeHigh": 1882
     },
     {
      "expiry": "2026-12-11",
@@ -227,12 +227,12 @@
      "putCallOi": 0.922,
      "maxPain": 1700,
      "atmIv": 64.7,
-     "expectedMovePct": 13.89,
-     "rangeLow": 1459,
-     "rangeHigh": 1929
+     "expectedMovePct": 13.9,
+     "rangeLow": 1465,
+     "rangeHigh": 1938
     }
    ],
-   "updatedAt": "2026-11-24T11:48:03.722Z"
+   "updatedAt": "2026-11-24T11:54:53.926Z"
   }
  }
 }
