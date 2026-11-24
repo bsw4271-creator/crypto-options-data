@@ -12,22 +12,34 @@ const OUT = new URL('./data/os/us-v1.json', import.meta.url);
 const FINNHUB = process.env.FINNHUB_API_KEY || '';
 const TIINGO = process.env.TIINGO_API_KEY || '';
 
-async function getJson(url, headers = {}) {
+// Keyed providers never get redirects (the key would follow). Cboe takes no key, so one redirect inside cboe.com
+// is allowed, and the final host is checked.
+async function getJson(url, headers = {}, { follow = false } = {}) {
   const res = await fetch(url, {
     headers: { accept: 'application/json', 'user-agent': 'crypto-options-data', ...headers },
-    redirect: 'error',
+    redirect: follow ? 'follow' : 'error',
     signal: AbortSignal.timeout(30_000),
   });
+  if (follow && !new URL(res.url).hostname.endsWith('.cboe.com')) throw new Error('REDIRECT_OFF_HOST');
   if (!res.ok) throw new Error(`HTTP_${res.status}`);
-  return res.json();
+  try {
+    return await res.json();
+  } catch {
+    throw new Error('NOT_JSON');
+  }
 }
-const cboe = (s) => getJson(`https://cdn.cboe.com/api/global/delayed_quotes/options/${s}.json`);
+const cboe = (s) => getJson(`https://cdn.cboe.com/api/global/delayed_quotes/options/${s}.json`, {}, { follow: true });
 const finnhub = (path) => getJson(`https://finnhub.io/api/v1/${path}`, { 'X-Finnhub-Token': FINNHUB });
 const tiingo = (s, since) =>
   getJson(`https://api.tiingo.com/tiingo/daily/${s.toLowerCase()}/prices?startDate=${since}`, {
     Authorization: `Token ${TIINGO}`,
   });
-const code = (e) => (e instanceof Error ? e.message : 'UNAVAILABLE').replace(/[^A-Z0-9_]/gi, '_').slice(0, 40);
+// Node's fetch reports every network failure as "fetch failed"; the cause code (ENOTFOUND, ECONNRESET, ...) says why.
+const code = (e) => {
+  const base = e instanceof Error ? e.message : 'UNAVAILABLE';
+  const cause = e instanceof Error && e.cause && typeof e.cause === 'object' ? String(e.cause.code ?? e.cause.name ?? '') : '';
+  return `${base}${cause ? ':' + cause : ''}`.replace(/[^A-Z0-9_:]/gi, '_').slice(0, 60);
+};
 
 const now = Date.now();
 const runAt = new Date(now).toISOString();
