@@ -1,0 +1,223 @@
+{
+ "schema": "crypto-options-data/us-bundle@1",
+ "source": "Cboe delayed quotes (15 min), Finnhub free, Tiingo free",
+ "run": {
+  "runAt": "2026-11-24T11:48:04.244Z",
+  "failed": [
+   {
+    "part": "options",
+    "symbol": "SPY",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "options",
+    "symbol": "QQQ",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "DIDIY",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "DELL",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "VIPS",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "HPQ",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "HPE",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "DE",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "BBY",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "MDT",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "BILI",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "DKS",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "DLTR",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "ADI",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "CHA",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "AMTM",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "KC",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "KSS",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "BURL",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "VNET",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "QFIN",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings-options",
+    "symbol": "WDAY",
+    "error": "fetch_failed"
+   },
+   {
+    "part": "earnings",
+    "symbol": null,
+    "error": "NO_OPTION_CHAINS"
+   }
+  ]
+ },
+ "options": {},
+ "earnings": null,
+ "bio": {
+  "asOf": "2026-11-23",
+  "xbi": {
+   "asOf": "2026-11-23",
+   "close": 147.16,
+   "r1w": 0.88,
+   "r1m": -1.59,
+   "r3m": -12.97
+  },
+  "spy": {
+   "asOf": "2026-11-23",
+   "close": 722.29,
+   "r1w": -2.39,
+   "r1m": -4.96,
+   "r3m": -5.46
+  },
+  "relative": {
+   "r1w": 3.27,
+   "r1m": 3.37,
+   "r3m": -7.51
+  },
+  "stocks": [
+   {
+    "symbol": "PEPG",
+    "asOf": "2026-11-23",
+    "close": 3.77,
+    "r1w": -10.02,
+    "r1m": 49.6,
+    "r3m": 10.07
+   },
+   {
+    "symbol": "LQDA",
+    "asOf": "2026-11-23",
+    "close": 55.53,
+    "r1w": -1.49,
+    "r1m": 30.2,
+    "r3m": -21.22
+   },
+   {
+    "symbol": "GMAB",
+    "asOf": "2026-11-23",
+    "close": 53.17,
+    "r1w": 3.1,
+    "r1m": 21.42,
+    "r3m": 54.74
+   },
+   {
+    "symbol": "IMVT",
+    "asOf": "2026-11-23",
+    "close": 33.24,
+    "r1w": -0.12,
+    "r1m": 17,
+    "r3m": -23.59
+   },
+   {
+    "symbol": "RZLT",
+    "asOf": "2026-11-23",
+    "close": 4.27,
+    "r1w": 19.27,
+    "r1m": 10.77,
+    "r3m": -14.77
+   },
+   {
+    "symbol": "XENE",
+    "asOf": "2026-11-23",
+    "close": 38.53,
+    "r1w": -1.86,
+    "r1m": 9.03,
+    "r3m": -36.23
+   },
+   {
+    "symbol": "MDGL",
+    "asOf": "2026-11-23",
+    "close": 398.87,
+    "r1w": -5.92,
+    "r1m": -8.15,
+    "r3m": -22.12
+   },
+   {
+    "symbol": "VIR",
+    "asOf": "2026-11-23",
+    "close": 9.03,
+    "r1w": -5.74,
+    "r1m": -14.57,
+    "r3m": -15.69
+   },
+   {
+    "symbol": "DERM",
+    "asOf": "2026-11-23",
+    "close": 3.38,
+    "r1w": -8.65,
+    "r1m": -32.67,
+    "r3m": -55.11
+   }
+  ],
+  "updatedAt": "2026-11-24T11:48:04.244Z"
+ }
+}
