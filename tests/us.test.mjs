@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  earningsWeek, readEarningsCalendar, readSurprises, topEarnings, readTiingo, returns, summarizeBio, BIO,
+  earningsWeek, readEarningsCalendar, readSurprises, topEarnings, readTiingo, returns, summarizeBio, BIO, ledgerTickers, isBioIndustry,
 } from '../lib/us.mjs';
 
 const NOW = Date.parse('2026-11-24T15:00:00Z'); // Tuesday 10:00 in New York
@@ -52,4 +52,31 @@ test('Tiingo returns and biotech against the market', () => {
   assert.equal(bio.relative.r1w, Math.round((xbi.r1w - spy.r1w) * 100) / 100);
   assert.deepEqual(bio.stocks.map((s) => s.symbol), [BIO[1], BIO[0]]);
   assert.throws(() => summarizeBio({ XBI: xbi }), /NO_BENCHMARK/);
+});
+
+test('Trillion ledger: recent tickers only, long calls first, then newest, no views carried over', () => {
+  const now = Date.parse('2026-11-26T12:00:00Z');
+  const ledger = {
+    schema: 'view-ledger/v1',
+    views: [
+      { key: 'oil', tickers: [], raw: '롱', lastUpdated: '2026-11-26' },
+      { key: 'GMAB', tickers: ['GMAB'], raw: '롱', lastUpdated: '2026-11-20' },
+      { key: 'ABVX', tickers: ['ABVX'], raw: '롱', lastUpdated: '2026-11-26' },
+      { key: 'SVRA', tickers: ['SVRA', 'pypd', 'GMAB', 'BRK.B'], raw: '보류', lastUpdated: '2026-11-24' },
+      { key: 'OLD', tickers: ['OLD'], raw: '롱', lastUpdated: '2026-09-01' },
+      { key: 'bad', tickers: 'XX', lastUpdated: '2026-11-26' },
+    ],
+  };
+  assert.deepEqual(ledgerTickers(ledger, now), ['ABVX', 'GMAB', 'SVRA', 'PYPD']);
+  assert.deepEqual(ledgerTickers(ledger, now, 45, 2), ['ABVX', 'GMAB']);
+  assert.throws(() => ledgerTickers({ views: [] }, now), /BAD_LEDGER/);
+  assert.ok(isBioIndustry('Biotechnology') && isBioIndustry('Pharmaceuticals'));
+  assert.equal(isBioIndustry('Banking'), false);
+  assert.equal(isBioIndustry(undefined), false);
+});
+
+test('biotech summary follows the given list', () => {
+  const r = { asOf: '2026-11-25', r1w: 1, r1m: 2, r3m: 3 };
+  const bio = summarizeBio({ XBI: r, SPY: r, ABVX: { ...r, r1m: 9 }, GMAB: r }, ['ABVX', 'GMAB', 'MISSING']);
+  assert.deepEqual(bio.stocks.map((s) => s.symbol), ['ABVX', 'GMAB']);
 });

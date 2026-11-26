@@ -5,12 +5,14 @@
 // reach the output or the log. A failed part keeps its previous block and is listed in run.failed.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import {
-  US_SCHEMA, BIO, earningsWeek, readEarningsCalendar, readSurprises, topEarnings, readTiingo, returns, summarizeBio,
+  US_SCHEMA, BIO, BIO_MAX, LEDGER_URL, ledgerTickers, isBioIndustry, earningsWeek, readEarningsCalendar, readSurprises, topEarnings, readTiingo, returns, summarizeBio,
 } from './lib/us.mjs';
 
 const OUT = new URL('./data/os/us-v1.json', import.meta.url);
 const FINNHUB = process.env.FINNHUB_API_KEY || '';
 const TIINGO = process.env.TIINGO_API_KEY || '';
+// Read-only fine-grained token for the one private file (the Trillion view ledger). Optional: without it the fixed list is used.
+const LEDGER_TOKEN = process.env.LEDGER_READ_TOKEN || '';
 
 // Keyed providers never get redirects (the key would follow).
 async function getJson(url, headers = {}) {
@@ -73,20 +75,48 @@ try {
 }
 
 // 2. Biotech: Tiingo daily closes, once per New York trading day is plenty (shared free quota).
-const bioFresh = previous?.bio?.updatedAt?.slice(0, 10) === runAt.slice(0, 10);
+// A bundle from before the Trillion list (no listSource) refreshes once, so the new list shows up the same day.
+const bioFresh =
+  previous?.bio?.updatedAt?.slice(0, 10) === runAt.slice(0, 10) && typeof previous?.bio?.listSource === 'string';
 if (!bioFresh) {
   try {
     if (!TIINGO) throw new Error('NO_TIINGO_KEY');
     const since = new Date(now - 130 * 86_400_000).toISOString().slice(0, 10);
+    // The list: biotech/pharma names the Trillion channel mentioned lately; the fixed list if that fails.
+    let list = BIO;
+    let listSource = 'fixed';
+    try {
+      if (!LEDGER_TOKEN) throw new Error('NO_LEDGER_TOKEN');
+      if (!FINNHUB) throw new Error('NO_FINNHUB_KEY');
+      const ledger = await getJson(LEDGER_URL, {
+        accept: 'application/vnd.github.raw+json',
+        authorization: `Bearer ${LEDGER_TOKEN}`,
+        'x-github-api-version': '2022-11-28',
+      });
+      const picked = [];
+      for (const s of ledgerTickers(ledger, now)) {
+        if (picked.length >= BIO_MAX) break;
+        try {
+          if (isBioIndustry((await finnhub(`stock/profile2?symbol=${s}`))?.finnhubIndustry)) picked.push(s);
+        } catch (e) {
+          fail('bio-industry', s, e);
+        }
+      }
+      if (!picked.length) throw new Error('NO_BIO_IN_LEDGER');
+      list = picked;
+      listSource = 'trillion';
+    } catch (e) {
+      fail('bio-list', null, e);
+    }
     const series = {};
-    for (const s of ['XBI', 'SPY', ...BIO]) {
+    for (const s of ['XBI', 'SPY', ...list]) {
       try {
         series[s] = returns(readTiingo(await tiingo(s, since)));
       } catch (e) {
         fail('bio', s, e);
       }
     }
-    out.bio = { ...summarizeBio(series), updatedAt: runAt };
+    out.bio = { ...summarizeBio(series, list), listSource, updatedAt: runAt };
   } catch (e) {
     fail('bio', null, e);
   }
