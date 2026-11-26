@@ -32,6 +32,7 @@ jobs:
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
+          LEDGER_READ_TOKEN: ${{ secrets.LEDGER_READ_TOKEN }}
         run: node collect-us.mjs
       - name: 저장
         run: |
