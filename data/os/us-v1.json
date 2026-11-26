@@ -1,28 +1,129 @@
 {
  "schema": "crypto-options-data/us-bundle@1",
- "source": "Cboe delayed quotes (15 min), Finnhub free, Tiingo free",
+ "source": "Finnhub free, Tiingo free",
  "run": {
-  "runAt": "2026-11-26T00:39:33.430Z",
-  "failed": [
+  "runAt": "2026-11-26T05:28:19.163Z",
+  "failed": []
+ },
+ "earnings": {
+  "week": {
+   "from": "2026-11-23",
+   "to": "2026-11-27"
+  },
+  "updatedAt": "2026-11-26T05:28:19.163Z",
+  "items": [
    {
-    "part": "options",
-    "symbol": "SPY",
-    "error": "HTTP_403"
+    "symbol": "DIDIY",
+    "date": "2026-11-25",
+    "hour": null,
+    "epsEstimate": -0.3502,
+    "epsActual": null,
+    "revenueEstimate": 66724743120,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 2
    },
    {
-    "part": "options",
-    "symbol": "QQQ",
-    "error": "HTTP_403"
+    "symbol": "DELL",
+    "date": "2026-11-24",
+    "hour": "amc",
+    "epsEstimate": 6.745,
+    "epsActual": 9.45,
+    "revenueEstimate": 50304742255,
+    "revenueActual": 54937000000,
+    "quarters": 4,
+    "beats": 4
    },
    {
-    "part": "earnings",
-    "symbol": null,
-    "error": "NO_OPTION_CHAINS"
+    "symbol": "VIPS",
+    "date": "2026-11-24",
+    "hour": "bmo",
+    "epsEstimate": 2.8254,
+    "epsActual": 2.598297,
+    "revenueEstimate": 20848107868,
+    "revenueActual": 20312619847,
+    "quarters": 4,
+    "beats": 1
+   },
+   {
+    "symbol": "HPQ",
+    "date": "2026-11-24",
+    "hour": "amc",
+    "epsEstimate": 0.7559,
+    "epsActual": 0.83,
+    "revenueEstimate": 15615902395,
+    "revenueActual": 16004000000,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "HPE",
+    "date": "2026-11-23",
+    "hour": "amc",
+    "epsEstimate": 1.2998,
+    "epsActual": 1.43,
+    "revenueEstimate": 14641233901,
+    "revenueActual": 14547000000,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "DE",
+    "date": "2026-11-25",
+    "hour": "bmo",
+    "epsEstimate": 4.1688,
+    "epsActual": 3.89,
+    "revenueEstimate": 10677445374,
+    "revenueActual": 10514000000,
+    "quarters": 4,
+    "beats": 3
+   },
+   {
+    "symbol": "BBY",
+    "date": "2026-11-24",
+    "hour": "bmo",
+    "epsEstimate": 1.5022,
+    "epsActual": 1.62,
+    "revenueEstimate": 9995843144,
+    "revenueActual": 10236000000,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "MDT",
+    "date": "2026-11-24",
+    "hour": "bmo",
+    "epsEstimate": 1.3447,
+    "epsActual": 1.34,
+    "revenueEstimate": 9576144582,
+    "revenueActual": 9364000000,
+    "quarters": 4,
+    "beats": 2
+   },
+   {
+    "symbol": "BILI",
+    "date": "2026-11-24",
+    "hour": "bmo",
+    "epsEstimate": 1.8192,
+    "epsActual": 1.865444,
+    "revenueEstimate": 8386446385,
+    "revenueActual": 8265116134,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "DKS",
+    "date": "2026-11-23",
+    "hour": null,
+    "epsEstimate": 1.4181,
+    "epsActual": null,
+    "revenueEstimate": 5142594931,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 2
    }
   ]
  },
- "options": {},
- "earnings": null,
  "bio": {
   "asOf": "2026-11-25",
   "xbi": {
