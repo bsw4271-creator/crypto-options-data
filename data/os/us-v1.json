@@ -2,7 +2,7 @@
  "schema": "crypto-options-data/us-bundle@1",
  "source": "Finnhub free, Tiingo free",
  "run": {
-  "runAt": "2026-11-26T08:54:01.018Z",
+  "runAt": "2026-11-26T13:33:21.820Z",
   "failed": []
  },
  "earnings": {
@@ -10,7 +10,7 @@
    "from": "2026-11-23",
    "to": "2026-11-27"
   },
-  "updatedAt": "2026-11-26T08:54:01.018Z",
+  "updatedAt": "2026-11-26T13:33:21.820Z",
   "items": [
    {
     "symbol": "DIDIY",
@@ -203,12 +203,36 @@
     "r3m": -20.96
    },
    {
+    "symbol": "ABVX",
+    "asOf": "2026-11-25",
+    "close": 84.05,
+    "r1w": 0.26,
+    "r1m": -3.39,
+    "r3m": -26.47
+   },
+   {
+    "symbol": "SVRA",
+    "asOf": "2026-11-25",
+    "close": 4.59,
+    "r1w": -2.75,
+    "r1m": -5.56,
+    "r3m": -16.39
+   },
+   {
     "symbol": "VIR",
     "asOf": "2026-11-25",
     "close": 9.81,
     "r1w": 7.21,
     "r1m": -15.21,
     "r3m": -13.26
+   },
+   {
+    "symbol": "HELP",
+    "asOf": "2026-11-25",
+    "close": 8.13,
+    "r1w": 18,
+    "r1m": -22.72,
+    "r3m": -38.6
    },
    {
     "symbol": "DERM",
@@ -219,6 +243,7 @@
     "r3m": -54.18
    }
   ],
-  "updatedAt": "2026-11-26T00:39:33.430Z"
+  "listSource": "trillion",
+  "updatedAt": "2026-11-26T13:33:21.820Z"
  }
 }
