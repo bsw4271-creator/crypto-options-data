@@ -2,8 +2,17 @@
  "schema": "crypto-options-data/os-bundle@1",
  "source": "Deribit public API",
  "run": {
-  "runAt": "2026-11-26T21:53:57.931Z",
-  "failed": []
+  "runAt": "2026-11-27T09:02:22.768Z",
+  "failed": [
+   {
+    "asset": "BTC",
+    "error": "HTTP_503"
+   },
+   {
+    "asset": "ETH",
+    "error": "HTTP_503"
+   }
+  ]
  },
  "assets": {
   "BTC": {

@@ -2,7 +2,7 @@
  "schema": "crypto-options-data/us-bundle@1",
  "source": "Finnhub free, Tiingo free",
  "run": {
-  "runAt": "2026-11-26T21:53:58.509Z",
+  "runAt": "2026-11-27T09:02:23.365Z",
   "failed": []
  },
  "earnings": {
@@ -10,7 +10,7 @@
    "from": "2026-11-23",
    "to": "2026-11-27"
   },
-  "updatedAt": "2026-11-26T21:53:58.509Z",
+  "updatedAt": "2026-11-27T09:02:23.365Z",
   "items": [
    {
     "symbol": "DIDIY",
@@ -244,6 +244,6 @@
    }
   ],
   "listSource": "trillion",
-  "updatedAt": "2026-11-26T13:33:21.820Z"
+  "updatedAt": "2026-11-27T09:02:23.365Z"
  }
 }
