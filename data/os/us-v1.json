@@ -2,7 +2,7 @@
  "schema": "crypto-options-data/us-bundle@1",
  "source": "Finnhub free, Tiingo free",
  "run": {
-  "runAt": "2026-11-28T08:25:12.878Z",
+  "runAt": "2026-11-28T17:10:50.714Z",
   "failed": []
  },
  "earnings": {
@@ -10,7 +10,7 @@
    "from": "2026-11-30",
    "to": "2026-12-04"
   },
-  "updatedAt": "2026-11-28T08:25:12.878Z",
+  "updatedAt": "2026-11-28T17:10:50.714Z",
   "items": [
    {
     "symbol": "KR",
