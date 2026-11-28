@@ -2,248 +2,248 @@
  "schema": "crypto-options-data/us-bundle@1",
  "source": "Finnhub free, Tiingo free",
  "run": {
-  "runAt": "2026-11-27T21:37:20.798Z",
+  "runAt": "2026-11-28T08:25:12.878Z",
   "failed": []
  },
  "earnings": {
   "week": {
-   "from": "2026-11-23",
-   "to": "2026-11-27"
+   "from": "2026-11-30",
+   "to": "2026-12-04"
   },
-  "updatedAt": "2026-11-27T21:37:20.798Z",
+  "updatedAt": "2026-11-28T08:25:12.878Z",
   "items": [
    {
-    "symbol": "DIDIY",
-    "date": "2026-11-25",
-    "hour": null,
-    "epsEstimate": -0.3502,
-    "epsActual": null,
-    "revenueEstimate": 66724743120,
-    "revenueActual": null,
-    "quarters": 4,
-    "beats": 2
-   },
-   {
-    "symbol": "DELL",
-    "date": "2026-11-24",
-    "hour": "amc",
-    "epsEstimate": 6.745,
-    "epsActual": 9.45,
-    "revenueEstimate": 50304742255,
-    "revenueActual": 54937000000,
-    "quarters": 4,
-    "beats": 4
-   },
-   {
-    "symbol": "VIPS",
-    "date": "2026-11-24",
+    "symbol": "KR",
+    "date": "2026-12-03",
     "hour": "bmo",
-    "epsEstimate": 2.8254,
-    "epsActual": 2.598297,
-    "revenueEstimate": 20848107868,
-    "revenueActual": 20312619847,
+    "epsEstimate": 1.1929,
+    "epsActual": null,
+    "revenueEstimate": 35595480374,
+    "revenueActual": null,
     "quarters": 4,
     "beats": 1
    },
    {
-    "symbol": "HPQ",
-    "date": "2026-11-24",
-    "hour": "amc",
-    "epsEstimate": 0.7559,
-    "epsActual": 0.83,
-    "revenueEstimate": 15615902395,
-    "revenueActual": 16004000000,
-    "quarters": 4,
-    "beats": 4
-   },
-   {
-    "symbol": "HPE",
-    "date": "2026-11-23",
-    "hour": "amc",
-    "epsEstimate": 1.2998,
-    "epsActual": 1.43,
-    "revenueEstimate": 14641233901,
-    "revenueActual": 14547000000,
-    "quarters": 4,
-    "beats": 4
-   },
-   {
-    "symbol": "DE",
-    "date": "2026-11-25",
+    "symbol": "NIO",
+    "date": "2026-12-01",
     "hour": "bmo",
-    "epsEstimate": 4.1688,
-    "epsActual": 3.89,
-    "revenueEstimate": 10677445374,
-    "revenueActual": 10514000000,
+    "epsEstimate": -0.0939,
+    "epsActual": null,
+    "revenueEstimate": 33668882128,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "CRM",
+    "date": "2026-12-02",
+    "hour": "amc",
+    "epsEstimate": 3.4717,
+    "epsActual": null,
+    "revenueEstimate": 11570800208,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "DG",
+    "date": "2026-12-03",
+    "hour": "bmo",
+    "epsEstimate": 1.4558,
+    "epsActual": null,
+    "revenueEstimate": 11497899743,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "M",
+    "date": "2026-12-03",
+    "hour": null,
+    "epsEstimate": -0.1762,
+    "epsActual": null,
+    "revenueEstimate": 4774926000,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "MRVL",
+    "date": "2026-12-01",
+    "hour": "amc",
+    "epsEstimate": 1.1133,
+    "epsActual": null,
+    "revenueEstimate": 3220033175,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 1
+   },
+   {
+    "symbol": "HRL",
+    "date": "2026-12-03",
+    "hour": "bmo",
+    "epsEstimate": 0.376,
+    "epsActual": null,
+    "revenueEstimate": 3170616815,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
+   },
+   {
+    "symbol": "ULTA",
+    "date": "2026-12-03",
+    "hour": "amc",
+    "epsEstimate": 5.7471,
+    "epsActual": null,
+    "revenueEstimate": 3054090079,
+    "revenueActual": null,
     "quarters": 4,
     "beats": 3
    },
    {
-    "symbol": "BBY",
-    "date": "2026-11-24",
-    "hour": "bmo",
-    "epsEstimate": 1.5022,
-    "epsActual": 1.62,
-    "revenueEstimate": 9995843144,
-    "revenueActual": 10236000000,
-    "quarters": 4,
-    "beats": 4
-   },
-   {
-    "symbol": "MDT",
-    "date": "2026-11-24",
-    "hour": "bmo",
-    "epsEstimate": 1.3447,
-    "epsActual": 1.34,
-    "revenueEstimate": 9576144582,
-    "revenueActual": 9364000000,
-    "quarters": 4,
-    "beats": 2
-   },
-   {
-    "symbol": "BILI",
-    "date": "2026-11-24",
-    "hour": "bmo",
-    "epsEstimate": 1.8192,
-    "epsActual": 1.865444,
-    "revenueEstimate": 8386446385,
-    "revenueActual": 8265116134,
-    "quarters": 4,
-    "beats": 4
-   },
-   {
-    "symbol": "DKS",
-    "date": "2026-11-23",
+    "symbol": "PVH",
+    "date": "2026-12-01",
     "hour": null,
-    "epsEstimate": 1.4181,
+    "epsEstimate": 2.6763,
     "epsActual": null,
-    "revenueEstimate": 5142594931,
+    "revenueEstimate": 2282062134,
     "revenueActual": null,
     "quarters": 4,
-    "beats": 2
+    "beats": 4
+   },
+   {
+    "symbol": "NTAP",
+    "date": "2026-12-01",
+    "hour": "amc",
+    "epsEstimate": 2.6603,
+    "epsActual": null,
+    "revenueEstimate": 2147955004,
+    "revenueActual": null,
+    "quarters": 4,
+    "beats": 4
    }
   ]
  },
  "bio": {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-27",
   "xbi": {
-   "asOf": "2026-11-25",
-   "close": 156.6,
-   "r1w": 7.97,
-   "r1m": 1.14,
-   "r3m": -6.91
+   "asOf": "2026-11-27",
+   "close": 158.5,
+   "r1w": 9.98,
+   "r1m": 0.63,
+   "r3m": -2.39
   },
   "spy": {
-   "asOf": "2026-11-25",
-   "close": 716.7,
-   "r1w": -1.85,
-   "r1m": -6.88,
-   "r3m": -6.82
+   "asOf": "2026-11-27",
+   "close": 728.32,
+   "r1w": 1.74,
+   "r1m": -5.7,
+   "r3m": -5.1
   },
   "relative": {
-   "r1w": 9.82,
-   "r1m": 8.02,
-   "r3m": -0.09
+   "r1w": 8.24,
+   "r1m": 6.33,
+   "r3m": 2.71
   },
   "stocks": [
    {
     "symbol": "PEPG",
-    "asOf": "2026-11-25",
-    "close": 4.14,
-    "r1w": 8.09,
-    "r1m": 59.23,
-    "r3m": 34.85
-   },
-   {
-    "symbol": "GMAB",
-    "asOf": "2026-11-25",
-    "close": 56.8,
-    "r1w": 11.44,
-    "r1m": 27.15,
-    "r3m": 66.57
-   },
-   {
-    "symbol": "IMVT",
-    "asOf": "2026-11-25",
-    "close": 35.81,
-    "r1w": 7.96,
-    "r1m": 24,
-    "r3m": -18.28
+    "asOf": "2026-11-27",
+    "close": 4.24,
+    "r1w": 7.89,
+    "r1m": 67.59,
+    "r3m": 37.66
    },
    {
     "symbol": "LQDA",
-    "asOf": "2026-11-25",
-    "close": 56.28,
-    "r1w": -0.21,
-    "r1m": 23.86,
-    "r3m": -19.53
+    "asOf": "2026-11-27",
+    "close": 57.61,
+    "r1w": 1.73,
+    "r1m": 26.01,
+    "r3m": -14.89
+   },
+   {
+    "symbol": "IMVT",
+    "asOf": "2026-11-27",
+    "close": 36.95,
+    "r1w": 13.62,
+    "r1m": 25.59,
+    "r3m": -10.32
    },
    {
     "symbol": "XENE",
-    "asOf": "2026-11-25",
-    "close": 40.55,
-    "r1w": 7.42,
-    "r1m": 12.61,
-    "r3m": -34.52
+    "asOf": "2026-11-27",
+    "close": 40.69,
+    "r1w": 8.33,
+    "r1m": 11.97,
+    "r3m": -32.17
    },
    {
     "symbol": "RZLT",
-    "asOf": "2026-11-25",
-    "close": 4.58,
-    "r1w": 7.76,
-    "r1m": 11.44,
-    "r3m": -8.03
+    "asOf": "2026-11-27",
+    "close": 4.68,
+    "r1w": 11.43,
+    "r1m": 10.9,
+    "r3m": 1.3
+   },
+   {
+    "symbol": "GMAB",
+    "asOf": "2026-11-27",
+    "close": 57.75,
+    "r1w": 12.46,
+    "r1m": 0.8,
+    "r3m": 73.79
    },
    {
     "symbol": "MDGL",
-    "asOf": "2026-11-25",
-    "close": 429.75,
-    "r1w": 7.96,
-    "r1m": -2.4,
-    "r3m": -20.96
-   },
-   {
-    "symbol": "ABVX",
-    "asOf": "2026-11-25",
-    "close": 84.05,
-    "r1w": 0.26,
-    "r1m": -3.39,
-    "r3m": -26.47
+    "asOf": "2026-11-27",
+    "close": 431.06,
+    "r1w": 8.65,
+    "r1m": 0.01,
+    "r3m": -19.24
    },
    {
     "symbol": "SVRA",
-    "asOf": "2026-11-25",
-    "close": 4.59,
-    "r1w": -2.75,
-    "r1m": -5.56,
-    "r3m": -16.39
+    "asOf": "2026-11-27",
+    "close": 4.66,
+    "r1w": -10.56,
+    "r1m": -7.17,
+    "r3m": -11.41
    },
    {
-    "symbol": "VIR",
-    "asOf": "2026-11-25",
-    "close": 9.81,
-    "r1w": 7.21,
-    "r1m": -15.21,
-    "r3m": -13.26
+    "symbol": "ABVX",
+    "asOf": "2026-11-27",
+    "close": 82.54,
+    "r1w": 2.34,
+    "r1m": -8.13,
+    "r3m": -27.18
    },
    {
     "symbol": "HELP",
-    "asOf": "2026-11-25",
-    "close": 8.13,
-    "r1w": 18,
-    "r1m": -22.72,
-    "r3m": -38.6
+    "asOf": "2026-11-27",
+    "close": 9.13,
+    "r1w": 34.66,
+    "r1m": -16.32,
+    "r3m": -25.04
+   },
+   {
+    "symbol": "VIR",
+    "asOf": "2026-11-27",
+    "close": 9.96,
+    "r1w": 12.29,
+    "r1m": -16.51,
+    "r3m": -8.03
    },
    {
     "symbol": "DERM",
-    "asOf": "2026-11-25",
-    "close": 3.45,
-    "r1w": -6.5,
-    "r1m": -30.44,
-    "r3m": -54.18
+    "asOf": "2026-11-27",
+    "close": 3.62,
+    "r1w": 1.97,
+    "r1m": -29.3,
+    "r3m": -51.54
    }
   ],
   "listSource": "trillion",
-  "updatedAt": "2026-11-27T09:02:23.365Z"
+  "updatedAt": "2026-11-28T08:25:12.878Z"
  }
 }
